@@ -1,6 +1,5 @@
 import React from 'react';
-import NavigationBar from '../components/header/NavigationBar'; // Assure-toi d'utiliser le chemin correct pour importer NavigationBar
-
+import NavigationBar from '../components/NavigationBar'; 
 const HomePage = () => {
   return (
     <div>
