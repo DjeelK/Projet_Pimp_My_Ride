@@ -1,11 +1,13 @@
 import React from 'react';
-import NavigationBar from '../components/NavigationBar'; 
+import NavigationBar from '../components/NavigationBar';
+import MainPage from '../components/MainPage';
+
 const HomePage = () => {
   return (
     <div>
-      <NavigationBar /> 
+      <NavigationBar />
       <div className="container">
-        <h1>Bienvenue sur la page d'accueil</h1>
+      <MainPage />
       </div>
     </div>
   );

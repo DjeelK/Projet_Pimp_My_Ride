@@ -1,0 +1,23 @@
+/* MainPage.css */
+
+.main-page {
+    width: 100%;
+    height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+    overflow: hidden; /* Pour empêcher le défilement si le contenu est plus grand */
+    position:static; /* Position relative pour positionner les éléments enfants */
+  }
+  
+  .main-content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main-page-fond {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 12%; /* Ajustez la valeur pour déplacer l'image vers le bas */
+    left: 0;
+    z-index: -1;
+  }
