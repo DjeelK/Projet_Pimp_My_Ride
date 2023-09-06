@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/NavigationBar.css';
+import '../css/NavigationBar.css'; 
 
 const NavigationBar = () => {
   return (
@@ -24,10 +25,14 @@ const NavigationBar = () => {
           <Link to="/application" className="nav-link">Application</Link>
         </li>
       </ul>
+      <div className="nav-separator">
+        <ul className="nav">
+          <Link to="/publier-trajet" className="nav-link publier-link">
+            <i className="bi bi-plus-circle bi-lg"></i> Publier un trajet
+          </Link>
+        </ul>
+      </div>
       <ul className="nav">
-        <li className="nav-item">
-          <Link to="/publier-trajet" className="nav-link">Publier un trajet</Link>
-        </li>
         <li className="nav-item">
           <button className="nav-button">Sign In</button>
         </li>
