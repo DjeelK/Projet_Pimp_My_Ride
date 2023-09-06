@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/NavigationBar.css'; 
+import ImgLogo from '../assets/logo-sans-fond.svg';
 
 const NavigationBar = () => {
   return (
@@ -9,10 +10,8 @@ const NavigationBar = () => {
       <div className="navbar-brand">
         <Link to="/">
           <img
-            src="/Projet_Pimp_My_Ride/src/assets/logo-sans-fond.svg"
+            src={ImgLogo}
             alt="Logo"
-            width="40"
-            height="40"
             className="navbar-brand-logo"
           />
         </Link>

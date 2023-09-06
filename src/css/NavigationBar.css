@@ -22,11 +22,19 @@
     text-decoration: none;
     color: black;
     margin-right: 10px; 
+    font-weight: normal; 
+    transition: color 0.2s ease-in-out; 
 }
+
+
+.nav-link:hover {
+    color: rgb(59, 59, 196);
+    font-weight: bold;
+}
+
 .publier-link {
     margin-left: 1000px; 
 }
-
 
 .nav-button {
     display: inline-flex;
