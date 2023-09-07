@@ -1,16 +1,13 @@
 import React from 'react';
-import '../css/MainPage.css'; 
-import ImgFondSite from '../assets/website_home.png';
+import '../css/MainPage.css';
 
 const MainPage = () => {
   return (
-    <div className="main-page">
-      <div className="main-content">
-      <img
-            src={ImgFondSite}
-            alt="Voiture,gps,fond bleu"
-            className="main-page-fond"
-          />
+    <div className="container-fluid">
+      <div className="d-flex justify-content-center align-items-center min-vh-100">
+        <div className="main-content">
+          <h1>Coucou</h1>
+        </div>
       </div>
     </div>
   );

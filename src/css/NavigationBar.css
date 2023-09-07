@@ -1,44 +1,36 @@
-/* Styles pour la barre de navigation */
-.navbar-custom {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-brand-logo {
-    margin-right: 20px;
-}
-
-.nav {
-    list-style: none;
-    display: flex;
+/* NavigationBar.css */
+.navbar {
     margin: 0;
     padding: 0;
-}
-
-.nav-link {
+  }
+  
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  
+  .navbar-brand-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .nav-link {
     text-decoration: none;
     color: black;
-    margin-right: 10px; 
-    font-weight: normal; 
-    transition: color 0.2s ease-in-out; 
-}
-
-
-.nav-link:hover {
+    margin-right: 10px;
+    font-weight: normal;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
     color: rgb(59, 59, 196);
     font-weight: bold;
-}
-
-.publier-link {
-    margin-left: 1000px; 
-}
-
-.nav-button {
-    display: inline-flex;
-    align-items: center;
+  }
+  
+  .publier-link {
+    margin-left: 10px;
+  }
+  
+  .nav-button {
     background-color: #1de9b6;
     color: #000;
     border: 1px solid #000;
@@ -54,14 +46,15 @@
     transition: all 0.14s ease-out;
     white-space: nowrap;
     margin-right: 20px;
-}
-
-.nav-button:hover {
+  }
+  
+  .nav-button:hover {
     box-shadow: 4px 4px 0 #000;
     transform: translate(-4px, -4px);
     background-color: #1de9b6;
-}
-
-.nav-button:focus-visible {
+  }
+  
+  .nav-button:focus-visible {
     outline-offset: 1px;
-}
+  }
+  

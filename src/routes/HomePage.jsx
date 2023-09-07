@@ -6,9 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="container">
-      <MainPage />
-      </div>
+        <MainPage />
     </div>
   );
 };
