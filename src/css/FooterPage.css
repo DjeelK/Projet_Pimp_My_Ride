@@ -45,7 +45,13 @@
     font-size: 15px;
 }
 
+.right-h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
 .large-text {
     font-size: 50px;
     margin-top: -10px; 
+    font-weight: bold;
 }
