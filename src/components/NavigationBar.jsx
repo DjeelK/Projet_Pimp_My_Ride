@@ -45,10 +45,10 @@ const NavigationBar = () => {
       </div>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <button className="nav-button btn btn-success">Sign In</button>
+          <button className="nav-button btn">Sign In</button>
         </li>
         <li className="nav-item">
-          <button className="nav-button btn btn-primary">Register</button>
+          <button className="nav-button btn">Register</button>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,8 @@
-/* NavigationBar.css */
 .navbar {
     margin: 0;
     padding: 0;
+    position: absolute;
+    width: -webkit-fill-available;
   }
   
   .navbar-brand {
