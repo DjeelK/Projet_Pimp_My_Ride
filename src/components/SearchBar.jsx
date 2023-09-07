@@ -3,6 +3,7 @@ import '../css/SearchBar.css'
 import IconeLocalisation from './IconeLocalisation';
 import LocalisationIcon from '../assets/location-2955.png'; 
 import CalendrierIcon from '../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png';
+import ButtonTool from './ButtonTool';
 
 
 const SearchBar = () => {
@@ -19,6 +20,9 @@ const SearchBar = () => {
           </div>
           <div class="col">
           <IconeLocalisation iconeLocalisation = {CalendrierIcon} />
+          </div>
+          <div class="col">
+          <ButtonTool/>
           </div>
           </div>
           </div>

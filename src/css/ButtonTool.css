@@ -1,35 +1,4 @@
-.navbar {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-brand {
-    margin-right: 20px;
-  }
-  
-  .navbar-brand-logo {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: black;
-    margin-right: 10px;
-    font-weight: normal;
-    transition: color 0.2s ease-in-out;
-  }
-  
-  .nav-link:hover {
-    color: rgb(59, 59, 196);
-    font-weight: bold;
-  }
-  
-  .publier-link {
-    margin-left: 10px;
-  }
-  
-  .nav-button {
+.nav-button {
     background-color: #12daa8;
     color: #ffffff;
     border: 1px solid #ffffff;
