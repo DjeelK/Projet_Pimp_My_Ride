@@ -1,0 +1,25 @@
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ajustez la taille du carré transparent */
+  height: 100px; /* Ajustez la taille du carré transparent */
+  background-color: transparent; /* Fond transparent */
+}
+
+.icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.171); /* Couleur de fond transparente */
+  width: 80px; /* Ajustez la taille de l'icône */
+  height: 80px; /* Ajustez la taille de l'icône */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Bords arrondis */
+}
+
+.icon-wrapper svg {
+  width: 100%; /* Remplissez complètement l'espace du conteneur */
+  height: 100%;
+  fill: #ffffff; /* Couleur de l'icône en blanc */
+}

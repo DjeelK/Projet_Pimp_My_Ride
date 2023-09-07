@@ -1,15 +1,17 @@
 import React from 'react';
+import '../css/SearchBar.css'
+import IconeLocalisation from './IconeLocalisation';
 
 const SearchBar = () => {
-    return(
-        <div className="container">
-        <div className="my-3 row">
-          <div className="col-10 offset-1 rounded bg-dark p-3 text-light">
-            <h1>Coucou</h1>
-          </div>
+  return (
+    <div className="container col-12">
+      <div className="row justify-content-center align-items-center vh-100 col-12">
+        <div className="rounded p-3 text-light text-center" id="bar_search">
+          <IconeLocalisation/>
         </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default SearchBar;

@@ -1,0 +1,23 @@
+/* styles.css (ou le nom de votre fichier CSS externe) */
+
+#bar_search {
+  background-color: #2d2d46;
+  border-radius: 50%; 
+  margin-bottom: 800px;
+}
+
+.title_bar_search {
+  margin-bottom: 10px;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.bg-dark {
+  background-color: #ff0000;
+}
+
+.text-light {
+  color: #ffffff;
+}
