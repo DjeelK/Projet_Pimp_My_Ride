@@ -31,12 +31,17 @@
 }
 
 
-.right-content-nb2{
-    font-size: 50px; 
+.right-content-nb2 {
+    font-size: 30px; 
     margin-right: 100px;
 }
 
-.small-text {
+.small-text-nb1 {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.small-text-nb2 {
     font-size: 15px;
 }
 
