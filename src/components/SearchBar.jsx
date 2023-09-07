@@ -20,13 +20,13 @@ const SearchBar = () => {
             <div className="col">
               <IconeLocalisation iconeLocalisation={LocalisationIcon} />
             </div>
-            <div className="col-auto title-container arrival"> {/* Ajoutez la classe "arrival" */}
+            <div className="col-auto title-container arrival">
               <div className="title-icon">Arrivée</div>
             </div>
             <div className="col">
               <IconeLocalisation iconeLocalisation={CalendrierIcon} />
             </div>
-            <div className="col-auto title-container date"> {/* Ajoutez la classe "date" */}
+            <div className="col-auto title-container date"> 
               <div className="title-icon">Date</div>
             </div>
             <div className="col">

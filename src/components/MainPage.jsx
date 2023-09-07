@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/MainPage.css';
 import SearchBar from './SearchBar';
-import IconeLocalisation from './IconeLocalisation';
 
 const MainPage = () => {
   return (

@@ -24,7 +24,7 @@
 }
 
 .title_appli {
-  font-size: 36px;
+  font-size: 50px;
   color: #ffffff; 
 }
 
@@ -32,6 +32,22 @@
   font-size: 14px;
   color: #ffffff; 
 }
+
+.bottom-title {
+  font-size: 60px; /* Taille de police */
+  color: #ffffff; /* Couleur du texte */
+  position: absolute; /* Position absolue pour le placer en bas */
+  bottom: 10px; /* Distance depuis le bas de la page */
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Pour centrer horizontalement */
+}
+
+
+
+
+
+
+
 
 
 
