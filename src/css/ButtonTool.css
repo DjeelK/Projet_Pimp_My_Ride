@@ -1,28 +1,33 @@
-.nav-button {
-    background-color: #12daa8;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    gap: 8px;
-    justify-content: center;
-    line-height: 1.5;
-    overflow: hidden;
-    padding: 12px 16px;
-    text-decoration: none;
-    transition: all 0.14s ease-out;
-    white-space: nowrap;
-    margin-right: 20px;
-  }
-  
-  .nav-button:hover {
-    box-shadow: 4px 4px 0 #ffffff;
-    transform: translate(-4px, -4px);
-    background-color: #8cebd3;
-  }
-  
-  .nav-button:focus-visible {
-    outline-offset: 1px;
-  }
-  
+
+.custom-button {
+  background-color: #12daa8;
+  color: #ffffff;
+  border: 1px solid transparent; 
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: background-color 0.14s ease-out; 
+  white-space: nowrap;
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+
+.custom-button:hover {
+  box-shadow: 4px 4px 0 transparent; 
+  background-color: #8cebd3;
+}
+
+.custom-button:focus-visible {
+  outline-offset: 1px;
+}
+
+.custom-button:active {
+  transform: none; 
+}

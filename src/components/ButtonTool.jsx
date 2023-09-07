@@ -4,10 +4,8 @@ import '../css/ButtonTool.css';
 const ButtonTool = () => {
     return (
         <div>
-        <li className="item-button">
-         <button className="item-button btn">Search</button>
-       </li>
-   </div>
+            <button className="custom-button btn">Search</button>
+        </div>
     )
 }
 

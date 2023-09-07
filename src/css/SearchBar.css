@@ -1,4 +1,3 @@
-/* styles.css (ou le nom de votre fichier CSS externe) */
 
 #bar_search {
   background-color: #2d2d46;
@@ -20,4 +19,23 @@
 
 .text-light {
   color: #ffffff;
+}
+
+/* SearchBar.css */
+.title-container {
+  margin-left: -25px; 
+  margin-top: -40px; 
+  font-size: 12px; 
+}
+
+.title-container.arrival { 
+  margin-left: -100px;
+  margin-top: -40px;
+  font-size: 12px;
+}
+
+.title-container.date { 
+  margin-left: -100px; 
+  margin-top: -40px; 
+  font-size: 12px;
 }

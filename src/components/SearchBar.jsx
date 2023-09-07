@@ -5,29 +5,37 @@ import LocalisationIcon from '../assets/location-2955.png';
 import CalendrierIcon from '../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png';
 import ButtonTool from './ButtonTool';
 
-
 const SearchBar = () => {
   return (
     <div className="container col-12">
       <div className="row justify-content-center align-items-center vh-100 col-12">
         <div className="rounded p-3 text-light text-center" id="bar_search">
-          <div class="row">
-          <div class="col">
-          <IconeLocalisation iconeLocalisation = {LocalisationIcon} />
-          </div>
-          <div class="col">
-          <IconeLocalisation iconeLocalisation = {LocalisationIcon} />
-          </div>
-          <div class="col">
-          <IconeLocalisation iconeLocalisation = {CalendrierIcon} />
-          </div>
-          <div class="col">
-          <ButtonTool/>
-          </div>
-          </div>
+          <div className="row align-items-center">
+            <div className="col-auto"> 
+              <IconeLocalisation iconeLocalisation={LocalisationIcon} />
+            </div>
+            <div className="col-auto title-container"> 
+              <div className="title-icon">Départ</div>
+            </div>
+            <div className="col">
+              <IconeLocalisation iconeLocalisation={LocalisationIcon} />
+            </div>
+            <div className="col-auto title-container arrival"> {/* Ajoutez la classe "arrival" */}
+              <div className="title-icon">Arrivée</div>
+            </div>
+            <div className="col">
+              <IconeLocalisation iconeLocalisation={CalendrierIcon} />
+            </div>
+            <div className="col-auto title-container date"> {/* Ajoutez la classe "date" */}
+              <div className="title-icon">Date</div>
+            </div>
+            <div className="col">
+              <ButtonTool />
+            </div>
           </div>
         </div>
       </div>
+    </div>
   );
 };
 
