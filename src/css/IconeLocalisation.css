@@ -18,8 +18,3 @@
   border-radius: 10px; /* Bords arrondis */
 }
 
-.icon-wrapper svg {
-  width: 100%; /* Remplissez complètement l'espace du conteneur */
-  height: 100%;
-  fill: #ffffff; /* Couleur de l'icône en blanc */
-}
