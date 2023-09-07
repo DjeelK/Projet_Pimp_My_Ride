@@ -7,7 +7,8 @@ const FooterPage = () => {
       <div className="left-content">
       </div>
       <div className="center-content-nb1">
-        <h1 className="left-h1">55K +</h1> 
+        <h1 className="large-text">50K</h1>
+        <div className="small-text">Utilisateurs</div>
       </div>
       <div className="right-content-nb2">
         <h1 className="right-h1">500K</h1> 

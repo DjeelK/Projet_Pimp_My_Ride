@@ -22,11 +22,25 @@
 }
 
 
-.left-h1{
-    margin-left: 10px; 
-  }
+/* 50K */
+.center-content-nb1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right; 
+}
 
-.right-h1 {
-    font-size: 40px;
-    margin-right: 300px;
+
+.right-content-nb2{
+    font-size: 50px; 
+    margin-right: 100px;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+.large-text {
+    font-size: 50px;
+    margin-top: -10px; 
 }
