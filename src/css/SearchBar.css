@@ -3,6 +3,7 @@
   background-color: #2d2d46;
   border-radius: 50%; 
   margin-bottom: 800px;
+  z-index: 1;
 }
 
 .title_bar_search {

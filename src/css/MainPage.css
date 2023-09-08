@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   overflow: hidden; 
+ 
+
   
 }
 .container-fluid {
@@ -34,50 +36,41 @@
 }
 
 .bottom-title {
-  font-size: 60px; /* Taille de police */
-  color: #ffffff; /* Couleur du texte */
-  position: absolute; /* Position absolue pour le placer en bas */
-  bottom: 10px; /* Distance depuis le bas de la page */
-  left: 50%; /* Centre horizontalement */
-  transform: translateX(-50%); /* Pour centrer horizontalement */
+  font-size: 60px; 
+  color: #ffffff; 
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
 }
 
 /* Styles pour la fumée ici */
+
 .smoke {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 10px;
-  right: 680px;
-  background: url('../assets/1525580_4263d.gif') no-repeat center center fixed;
-  background-size: auto; 
-  opacity: 0.2; /* Commencez avec une opacité faible */
-  z-index: 0; 
-  animation: smokeAnimation 5s ease-in-out infinite; 
-  filter: brightness(500%); /* Augmentez la luminosité */
+  top: 440px;
+  left: 30px;
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  background-size: auto;
+  opacity: 1; /* Réglez l'opacité de la fumée selon vos préférences */
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(300%);
+  animation: smokeAnimation 5s ease-in-out infinite;
 }
 
-/* Animation de la fumée */
 @keyframes smokeAnimation {
   0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  70% {
-    transform: scale(1.2);
-    opacity: 0.3;
+    opacity: 0.7; /* Commencez avec une opacité un peu plus basse */
   }
   100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-  0% {
-    opacity: 1; 
-  }
-  100% {
-    opacity: 0.2; 
+    opacity: 0.7; /* Terminez avec la même opacité */
   }
 }
+
+
 
 
 
