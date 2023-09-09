@@ -12,10 +12,10 @@ const SignInPageRoute = () => {
       <div className="sign-in-container">
         <div className="left-section"></div>
         <div className="right-section">
-          <h4>Bienvenue sur Pimp My Ride</h4> {/* Texte ajouté ici */}
-          <h2>Sign In</h2>
+          <h4>Bienvenue sur Pimp My Ride</h4> 
+          <h2>Sign in</h2>
           <SignInForm />
-          <button onClick={handleSignInClick}>Sign In</button>
+          <button onClick={handleSignInClick}>Sign in</button>
           <div className="no-account">
             No Account ? <span className="sign-up-link">Sign up</span>
           </div>

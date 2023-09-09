@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TextInput from '../../components/TextInput';
-import ButtonComponent from '../../components/ButtonComponent';
+
 
 const SignInForm = () => {
   const [email, setEmail] = useState('');
@@ -16,6 +16,7 @@ const SignInForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Ajoutez ici la logique de connexion, par exemple, en utilisant une requête API vers votre serveur
   };
 
   return (
@@ -36,7 +37,6 @@ const SignInForm = () => {
         placeholder="Mot de passe"
         required
       />
-      <ButtonComponent type="submit">Sign In</ButtonComponent>
     </form>
   );
 };
