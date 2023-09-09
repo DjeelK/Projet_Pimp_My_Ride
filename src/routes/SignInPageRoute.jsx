@@ -1,20 +1,24 @@
 import React from 'react';
 import SignInForm from '../routes/auth/SignForm';
-import '../css/SignInPage.css'; 
-
+import '../css/SignInPage.css';
 
 const SignInPageRoute = () => {
   const handleSignInClick = () => {
     // console.log('Bouton Sign In cliqué');
   };
+
   return (
     <div className="sign-in-page">
       <div className="sign-in-container">
         <div className="left-section"></div>
         <div className="right-section">
+          <h4>Bienvenue sur Pimp My Ride</h4> {/* Texte ajouté ici */}
           <h2>Sign In</h2>
-          <SignInForm/>
+          <SignInForm />
           <button onClick={handleSignInClick}>Sign In</button>
+          <div className="no-account">
+            No Account ? <span className="sign-up-link">Sign up</span>
+          </div>
         </div>
       </div>
     </div>

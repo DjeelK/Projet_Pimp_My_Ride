@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import TextInput from '../../components/TextInput';
 import ButtonComponent from '../../components/ButtonComponent';
 
-
 const SignInForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,17 +21,19 @@ const SignInForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <TextInput
-        label="Email"
+        label="Entrez votre adresse mail ou votre pseudonyme"
         type="email"
         value={email}
         onChange={handleEmailChange}
+        placeholder="Pseudonyme ou adresse email"
         required
       />
       <TextInput
-        label="Password"
+        label="Entrez votre mot de passe"
         type="password"
         value={password}
         onChange={handlePasswordChange}
+        placeholder="Mot de passe"
         required
       />
       <ButtonComponent type="submit">Sign In</ButtonComponent>
