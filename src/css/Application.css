@@ -1,0 +1,9 @@
+.container-application {
+  background: url('../assets/My_application.jpg') no-repeat center top fixed;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

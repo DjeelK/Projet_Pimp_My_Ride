@@ -1,11 +1,20 @@
-import React from 'react';
-import HomePage from './routes/HomePage';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import ApplicationPageRoute from './routes//ApplicationPageRoute';
+// import HomePageRoute from './routes/HomePageRoute';
+
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+  }, [dispatch]);
+
   return (
-      <div className="App">
-          <HomePage />
-      </div>
+    <div className="App">
+      {/* <HomePageRoute/> */}
+      <ApplicationPageRoute/>
+    </div>
   );
 }
 

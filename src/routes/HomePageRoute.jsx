@@ -3,7 +3,7 @@ import NavigationBar from '../components/NavigationBar';
 import MainPage from '../components/MainPage';
 import FooterPage from '../components/FooterPage';
 
-const HomePage = () => {
+const HomePageRoute = () => {
   return (
     <div>
       <NavigationBar />
@@ -13,4 +13,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageRoute;

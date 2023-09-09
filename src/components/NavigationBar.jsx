@@ -30,7 +30,7 @@ const NavigationBar = () => {
             <Link to="/covoiturage" className="nav-link">Covoiturage</Link>
           </li>
           <li className="nav-item">
-            <Link to="/application" className="nav-link">Application</Link>
+          <Link to="/application" className="nav-link">Application</Link>
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@ const NavigationBar = () => {
       </div>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <button className="nav-button btn">Sign In</button>
+          <Link to="/signin" className="nav-link nav-button">Sign In</Link>
         </li>
         <li className="nav-item">
           <button className="nav-button btn">Register</button>
