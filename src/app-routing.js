@@ -1,8 +1,8 @@
 import App from "./App";
 import ErrorPage from './routes/ErrorPage';
 import HomePageRoute from './routes/HomePageRoute';
-import SignInForm from "./routes/auth/SignForm";
 import ApplicationPageRoute from './routes/ApplicationPageRoute';
+import SignInPageRoute from './routes/SignInPageRoute';
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <HomePageRoute />
       },
       {
-        path: "/auth", 
-        element: <SignInForm/>
+        path: "/signIn", 
+        element: <SignInPageRoute/>
       },
       {
         path: '/application',

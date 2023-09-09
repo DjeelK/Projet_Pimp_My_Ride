@@ -17,7 +17,6 @@ const SignInForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ajoutez ici la logique de connexion, par exemple, en utilisant une requête API vers votre serveur
   };
 
   return (

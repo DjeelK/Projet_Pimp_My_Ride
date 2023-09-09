@@ -1,34 +1,20 @@
 .sign-in-page {
-    background: linear-gradient(to right, #3498db, #f1c40f); /* Couleurs de fond */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-image: url('../assets/Fond_login.png'); 
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
   
   .sign-in-container {
-    background-color: #ffffff; /* Couleur de l'encadré */
-    border-radius: 20px; /* Coins arrondis */
+    background-color: #ffffff; 
+    border-radius: 20px; 
     display: flex;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Ombre pour l'encadré */
-  }
-  
-  .left-section {
-    flex: 1;
-    min-height: 100vh;
-    background-color: #3498db; /* Couleur de la section de gauche */
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
   }
   
   h2 {
-    color: #333; /* Couleur du texte */
+    color: #333; 
   }

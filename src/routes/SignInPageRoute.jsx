@@ -1,12 +1,12 @@
 import React from 'react';
 import SignInForm from '../routes/auth/SignForm';
+import '../css/SignInPage.css'; 
+
 
 const SignInPageRoute = () => {
   const handleSignInClick = () => {
-    console.log('Bouton Sign In cliqué');
-    // Vous pouvez ajouter ici le code pour rediriger l'utilisateur ou effectuer d'autres actions liées à la connexion
+    // console.log('Bouton Sign In cliqué');
   };
-
   return (
     <div className="sign-in-page">
       <div className="sign-in-container">
