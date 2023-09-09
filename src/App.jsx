@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import SignInPageRoute from './routes/SignInPageRoute';
+// import SignInPageRoute from './routes/SignInPageRoute';
+import SignUpPageRoute from './routes/SignUpPageRoute';
 // import ApplicationPageRoute from './routes//ApplicationPageRoute';
 // import HomePageRoute from './routes/HomePageRoute';
 
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       {/* <HomePageRoute/> */}
       {/* <ApplicationPageRoute/> */}
-      <SignInPageRoute/>
+      {/* <SignInPageRoute/> */}
+      <SignUpPageRoute/>
     </div>
   );
 }

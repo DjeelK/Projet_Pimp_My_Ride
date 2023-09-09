@@ -3,6 +3,7 @@ import ErrorPage from './routes/ErrorPage';
 import HomePageRoute from './routes/HomePageRoute';
 import ApplicationPageRoute from './routes/ApplicationPageRoute';
 import SignInPageRoute from './routes/SignInPageRoute';
+import SignUpPageRoute from "./routes/SignUpPageRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/signIn", 
         element: <SignInPageRoute/>
+      },
+      {
+        path: "/signUp", 
+        element: <SignUpPageRoute/>
       },
       {
         path: '/application',

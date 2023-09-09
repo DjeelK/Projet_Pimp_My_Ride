@@ -48,7 +48,7 @@ const NavigationBar = () => {
           <Link to="/signin" className="nav-link nav-button">Sign In</Link>
         </li>
         <li className="nav-item">
-          <button className="nav-button btn">Register</button>
+          <button className="nav-button btn">Sign Up</button>
         </li>
       </ul>
     </nav>

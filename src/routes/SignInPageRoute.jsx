@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SignInForm from '../routes/auth/SignForm';
+import SignInForm from './auth/SignInForm';
 import '../css/SignInPage.css';
 
 const SignInPageRoute = () => {

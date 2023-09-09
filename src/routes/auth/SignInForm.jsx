@@ -18,12 +18,12 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
   return (
     <form onSubmit={handleSubmit}>
       <TextInput
-        label="Entrez votre adresse mail ou votre pseudonyme"
+        label="Entrez votre adresse mail"
         type="email"
         name="email"
         value={email}
         onChange={handleInputChange}
-        placeholder="Pseudonyme ou adresse email"
+        placeholder="Adresse email"
         required
       />
       <TextInput
