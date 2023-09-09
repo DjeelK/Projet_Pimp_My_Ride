@@ -20,6 +20,10 @@
     font-weight: normal;
     transition: color 0.2s ease-in-out;
   }
+
+  .sign-in-button {
+    margin-top: 10px;
+  }
   
   .nav-link:hover {
     color: rgb(59, 59, 196);

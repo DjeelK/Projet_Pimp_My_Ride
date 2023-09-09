@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 // import SignInPageRoute from './routes/SignInPageRoute';
-import SignUpPageRoute from './routes/SignUpPageRoute';
+// import SignUpPageRoute from './routes/SignUpPageRoute';
 // import ApplicationPageRoute from './routes//ApplicationPageRoute';
 // import HomePageRoute from './routes/HomePageRoute';
+import CovoituragePageRoute from './routes/CovoituragePageRoute';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <HomePageRoute/> */}
       {/* <ApplicationPageRoute/> */}
       {/* <SignInPageRoute/> */}
-      <SignUpPageRoute/>
+      {/* <SignUpPageRoute/> */}
+      <CovoituragePageRoute/>
     </div>
   );
 }
