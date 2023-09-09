@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TextInput from '../../components/TextInput';
+import ButtonComponent from '../../components/ButtonComponent';
 
+const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
+  const { email, password } = formData;
 
-const SignInForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    onInputChange(name, value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ajoutez ici la logique de connexion, par exemple, en utilisant une requête API vers votre serveur
+    onSignInClick();
   };
 
   return (
@@ -24,19 +20,22 @@ const SignInForm = () => {
       <TextInput
         label="Entrez votre adresse mail ou votre pseudonyme"
         type="email"
+        name="email"
         value={email}
-        onChange={handleEmailChange}
+        onChange={handleInputChange}
         placeholder="Pseudonyme ou adresse email"
         required
       />
       <TextInput
         label="Entrez votre mot de passe"
         type="password"
+        name="password"
         value={password}
-        onChange={handlePasswordChange}
+        onChange={handleInputChange}
         placeholder="Mot de passe"
         required
       />
+      <ButtonComponent type="submit">Sign in</ButtonComponent>
     </form>
   );
 };

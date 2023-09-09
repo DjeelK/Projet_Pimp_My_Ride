@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SignInForm from '../routes/auth/SignForm';
 import '../css/SignInPage.css';
 
 const SignInPageRoute = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
   const handleSignInClick = () => {
-    // console.log('Bouton Sign In cliqué');
+    console.log('Email:', formData.email);
+    console.log('Password:', formData.password);
+  };
+
+  const handleInputChange = (name, value) => {
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   return (
@@ -12,10 +25,13 @@ const SignInPageRoute = () => {
       <div className="sign-in-container">
         <div className="left-section"></div>
         <div className="right-section">
-          <h4>Bienvenue sur Pimp My Ride</h4> 
+          <h4>Bienvenue sur Pimp My Ride</h4>
           <h2>Sign in</h2>
-          <SignInForm />
-          <button onClick={handleSignInClick}>Sign in</button>
+          <SignInForm
+            formData={formData}
+            onInputChange={handleInputChange}
+            onSignInClick={handleSignInClick}
+          />
           <div className="no-account">
             No Account ? <span className="sign-up-link">Sign up</span>
           </div>
