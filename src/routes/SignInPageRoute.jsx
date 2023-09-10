@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SignInForm from './auth/SignInForm';
+import { Link } from 'react-router-dom';
 import '../css/SignInPage.css';
 
 const SignInPageRoute = () => {
@@ -33,7 +34,7 @@ const SignInPageRoute = () => {
             onSignInClick={handleSignInClick}
           />
           <div className="no-account">
-            No Account ? <span className="sign-up-link">Sign up</span>
+          No Account? <Link to="/signup" className="sign-up-link">Sign up</Link>
           </div>
         </div>
       </div>

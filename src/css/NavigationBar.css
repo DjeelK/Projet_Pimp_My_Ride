@@ -1,64 +1,54 @@
 .navbar {
-    margin: 0;
-    padding: 0;
-    z-index:1;
-  }
-  
-  .navbar-brand {
-    margin-right: 20px;
-  }
-  
-  .navbar-brand-logo {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: rgb(255, 254, 254);
-    margin-right: 10px;
-    font-weight: normal;
-    transition: color 0.2s ease-in-out;
-  }
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
 
-  .sign-in-button {
-    margin-top: 10px;
-  }
-  
-  .nav-link:hover {
-    color: rgb(59, 59, 196);
-    font-weight: bold;
-  }
-  
-  .publier-link {
-    margin-left: 10px;
-  }
-  
-  .nav-button {
-    background-color: #12daa8;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    gap: 8px;
-    justify-content: center;
-    line-height: 1.5;
-    overflow: hidden;
-    padding: 12px 16px;
-    text-decoration: none;
-    transition: all 0.14s ease-out;
-    white-space: nowrap;
-    margin-right: 20px;
-  }
-  
-  .nav-button:hover {
-    box-shadow: 4px 4px 0 #ffffff;
-    transform: translate(-4px, -4px);
-    background-color: #8cebd3;
-  }
-  
-  .nav-button:focus-visible {
-    outline-offset: 1px;
-  }
-  
+.navbar-brand {
+  margin-right: 20px;
+}
+
+.navbar-brand-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-link, .nav-link:visited {
+  text-decoration: none;
+  color: #ffffff; 
+  margin-right: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: rgb(59, 59, 196);
+  font-weight: bold;
+}
+
+.nav-button {
+  background-color: #12daa8;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: all 0.14s ease-out;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.nav-button:hover {
+  box-shadow: 4px 4px 0 #ffffff;
+  transform: translate(-4px, -4px);
+  background-color: #8cebd3;
+}
+
+.nav-button:focus-visible {
+  outline-offset: 1px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SignUpForm from './auth/SignUpForm'; // Importez le composant SignUpForm
 import '../css/SignUpPage.css';
+import { Link } from 'react-router-dom';
 
 const SignUpPageRoute = () => {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ const SignUpPageRoute = () => {
             onSignUpClick={handleSignUpClick}
           />
           <div className="no-account">
-            Already have an account? <span className="sign-in-link">Sign in</span>
+          Already have an account? <Link to="/signin" className="sign-in-link">Sign in</Link>
           </div>
         </div>
       </div>

@@ -34,9 +34,25 @@ h4 {
   font-size: 14px ;
   margin-top: 10px;
 }
+
+
 .sign-up-link {
   font-size: 14px;
   font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.sign-up-link:visited {
+  color: #000000;
+}
+
+
+.sign-up-link:focus,
+.sign-up-link:hover {
+  color: #E48700;
+  text-decoration: underline; 
 }
 
 /* Styles pour les inputs et le bouton */
