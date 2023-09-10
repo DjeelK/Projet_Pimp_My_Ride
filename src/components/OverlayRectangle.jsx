@@ -5,7 +5,6 @@ const OverlayRectangle = ({ leftMargin }) => {
   const rectangleStyle = {
     left: leftMargin || 0,
   };
-
   return <div className="overlay-rectangle" style={rectangleStyle}></div>;
 };
 

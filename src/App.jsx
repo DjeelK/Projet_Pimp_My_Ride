@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <Outlet/>
     </div>
   );
 }
