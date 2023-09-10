@@ -1,21 +1,21 @@
-import React from 'react';
-import NavigationBar from './NavigationBar';
-import SearchBar from '../components/SearchBar';
-import '../css/Covoiturage.css';
-import '../css/SearchBar.css';
+import React from "react";
+import NavigationBar from "./NavigationBar";
+import SearchBar from "../components/SearchBar";
+import "../css/Covoiturage.css";
 
 const CovoituragePage = () => {
   return (
     <div>
       <NavigationBar />
-      <div className="container-covoiturage">
-        {/* <div className="transparent-rectangle">
-          <SearchBar className="search-bar-covoiturage" />
-        </div> */}
-        <SearchBar/>
+      <div className="container-fluid-covoit">
+          <div className="main-content-covoit col-6">
+            <SearchBar />
+          </div>
+        </div>
       </div>
-    </div>
+  
   );
 };
 
 export default CovoituragePage;
+
