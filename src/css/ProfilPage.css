@@ -1,15 +1,69 @@
+/* Style pour le conteneur principal */
 .container-fluid-profil {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
     180deg,
-      rgba(2, 0, 36, 0.7) 0%, 
-      rgba(63, 109, 227, 0.7) 0%,
-      rgba(0, 212, 255, 0.7) 100% 
-    );
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    rgba(2, 0, 36, 0.7) 0%,
+    rgba(63, 109, 227, 0.7) 0%,
+    rgba(0, 212, 255, 0.7) 100%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white; /* Couleur du texte en blanc */
+}
+
+/* Style pour la photo de profil */
+.avatar {
+  width: 200px; /* Taille de la photo */
+  height: 200px;
+  border-radius: 50%; /* Forme circulaire */
+  cursor: pointer; /* Curseur pointer au survol */
+  margin-bottom: 20px; /* Espace sous la photo */
+}
+
+/* Style pour le formulaire de modification de profil */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Style pour les champs d'entrée du formulaire */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Ajouter une classe pour ajuster la largeur du libellé */
+.form-label {
+  width: 40%; /* Ajuster la largeur du libellé pour correspondre aux champs */
+  float: left; /* Aligner les libellés à gauche */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style pour le bouton "Edit" */
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+h6 {
+  margin-top: 12px;
+  font-size: 12px;
 }

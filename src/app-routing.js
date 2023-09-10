@@ -7,6 +7,7 @@ import SignUpPageRoute from "./routes/SignUpPageRoute";
 import CovoituragePageRoute from "./routes/CovoituragePageRoute";
 import ProfilPageRoute from "./routes/ProfilPageRoute";
 
+
 const { createBrowserRouter } = require("react-router-dom");
 
 const router = createBrowserRouter([

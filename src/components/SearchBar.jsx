@@ -6,6 +6,7 @@ import CalendrierIcon from "../assets/vecteezy_calendar-icon-sign-symbol-design_
 import ButtonTool from "./ButtonTool";
 
 const SearchBar = () => {
+  
   return (
     <div className="search-bar" id="bar_search_icone">
       <form className="row d-flex justify-content-between px-3">

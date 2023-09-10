@@ -1,16 +1,21 @@
-
 import React from "react";
 import NavigationBar from "./NavigationBar";
-import OverlayRectangle from "../components/OverlayRectangle";
-import "../css/ProfilPage.css";
 import "../css/Rectangle.css";
+import ProfilForm from "../routes/profil/ProfilForm";
+import "../css/ProfilPage.css"; 
 
 const ProfilPage = () => {
   return (
     <div>
       <NavigationBar />
       <div className="container-fluid-profil">
-        <OverlayRectangle leftMargin={100} />
+        <div className="container mt-5">
+          <div className="row">
+            <div className="overlay-rectangle col-md-6 offset-md-3">
+              <ProfilForm />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
