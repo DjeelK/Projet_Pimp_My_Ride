@@ -15,7 +15,7 @@
   
   .nav-link {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 254, 254);
     margin-right: 10px;
     font-weight: normal;
     transition: color 0.2s ease-in-out;

@@ -1,40 +1,51 @@
-import React from 'react';
-import '../css/SearchBar.css'
-import IconeLocalisation from './IconeLocalisation';
-import LocalisationIcon from '../assets/location-2955.png'; 
-import CalendrierIcon from '../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png';
-import ButtonTool from './ButtonTool';
+import React from "react";
+import "../css/SearchBar.css";
+import IconeLocalisation from "./IconeLocalisation";
+import LocalisationIcon from "../assets/location-2955.png";
+import CalendrierIcon from "../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png";
+import ButtonTool from "./ButtonTool";
 
 const SearchBar = () => {
   return (
-    <div className="container col-12">
-      <div className="row justify-content-center align-items-center vh-100 col-12">
-        <div className="rounded p-3 text-light text-center" id="bar_search_icone">
-          <div className="row align-items-center">
-            <div className="col-auto"> 
-              <IconeLocalisation iconeLocalisation={LocalisationIcon} />
-            </div>
-            <div className="col-auto title-container"> 
-              <div className="title-icon">Départ</div>
-            </div>
-            <div className="col">
-              <IconeLocalisation iconeLocalisation={LocalisationIcon} />
-            </div>
-            <div className="col-auto title-container arrival">
-              <div className="title-icon">Arrivée</div>
-            </div>
-            <div className="col">
-              <IconeLocalisation iconeLocalisation={CalendrierIcon} />
-            </div>
-            <div className="col-auto title-container date"> 
-              <div className="title-icon">Date</div>
-            </div>
-            <div className="col">
-              <ButtonTool />
-            </div>
+    <div className="search-bar" id="bar_search_icone">
+      <form className="row d-flex justify-content-between px-3">
+        <div className="col-3 d-flex flex-column align-items-center">
+          <IconeLocalisation
+            iconeLocalisation={LocalisationIcon}
+            className="align-self-center"
+          />
+          <div className="col-auto title-container">
+            <div className="title-icon">Départ</div>
+            <input type="text" />
           </div>
         </div>
-      </div>
+
+        <div className="col-3 d-flex flex-column align-items-center">
+          <IconeLocalisation
+            iconeLocalisation={LocalisationIcon}
+            className="align-self-center"
+          />
+          <div className="col-auto title-container">
+            <div className="title-icon">Arrivée</div>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div className="col-3 d-flex flex-column align-items-center">
+          <IconeLocalisation
+            iconeLocalisation={CalendrierIcon}
+            className="align-self-center"
+          />
+          <div className="col-auto title-container">
+        <div className="title-icon-date">Date</div>
+          <input type="date" className="date-input" />
+        </div>
+        </div>
+
+        <div className="col-3 d-flex align-items-center justify-content-end">
+          <ButtonTool />
+        </div>
+      </form>
     </div>
   );
 };

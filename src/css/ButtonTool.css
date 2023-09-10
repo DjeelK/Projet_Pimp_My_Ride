@@ -14,9 +14,7 @@
   text-decoration: none;
   transition: background-color 0.14s ease-out; 
   white-space: nowrap;
-  margin-right: 20px;
-  margin-top: 25px;
-  margin-left: 60px;
+
 }
 
 .custom-button:hover {
