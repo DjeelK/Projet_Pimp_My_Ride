@@ -9,7 +9,7 @@ const SearchBar = () => {
   return (
     <div className="container col-12">
       <div className="row justify-content-center align-items-center vh-100 col-12">
-        <div className="rounded p-3 text-light text-center" id="bar_search">
+        <div className="rounded p-3 text-light text-center" id="bar_search_icone">
           <div className="row align-items-center">
             <div className="col-auto"> 
               <IconeLocalisation iconeLocalisation={LocalisationIcon} />
