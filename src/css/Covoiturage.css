@@ -4,25 +4,12 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrage vertical */
-  align-items: center; /* Centrage horizontal */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
 }
 
 .main-content-covoit {
   margin-top: 100px;
   margin-right: 200px;
-}
-
-.overlay-rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%; /* Largeur légèrement supérieure à la barre de recherche */
-  height: 80%; /* Hauteur légèrement supérieure à la barre de recherche */
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 0;
-  margin-left: 270px;
-  margin-top:100px;
-  border-radius: 10px;
 }

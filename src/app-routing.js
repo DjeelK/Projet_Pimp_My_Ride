@@ -5,6 +5,7 @@ import ApplicationPageRoute from './routes/ApplicationPageRoute';
 import SignInPageRoute from './routes/SignInPageRoute';
 import SignUpPageRoute from "./routes/SignUpPageRoute";
 import CovoituragePageRoute from "./routes/CovoituragePageRoute";
+import ProfilPageRoute from "./routes/ProfilPageRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/covoiturage',
         element: <CovoituragePageRoute/>,
+      },
+      {
+        path: '/profil',
+        element: <ProfilPageRoute/>,
       },
     ]
   }
