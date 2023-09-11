@@ -12,7 +12,7 @@ const TripPage = () => {
           <div>
             <img
               src={fondAddTrajet}
-              alt="Image de fond"
+              alt="Personnage en 3D pointe vers formulaire"
               className="img-fluid"
             />
           </div>

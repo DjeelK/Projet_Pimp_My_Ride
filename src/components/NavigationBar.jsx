@@ -32,20 +32,21 @@ const NavigationBar = () => {
           <li className="nav-item">
           <Link to="/application" className="nav-link">Application</Link>
           </li>
+          <Link to="/addTrajet" className="nav-link publier-link">
+              <i className="bi bi-plus-circle bi-lg"></i> Publier un trajet
+            </Link>
         </ul>
       </div>
       <div className="nav-separator">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/addTrajet" className="nav-link publier-link">
-              <i className="bi bi-plus-circle bi-lg"></i> Publier un trajet
-            </Link>
-          </li>
-          <li className="nav-item">
           <Link to="/mesTrajets" className="nav-link">Mes trajets</Link>
           </li>
           <li className="nav-item">
-          <Link to="/Profil" className="nav-link">Mon profil</Link>
+          <Link to="/profil" className="nav-link">Mon profil</Link>
+          </li>
+          <li className="nav-item">
+          <Link to="/commentaires" className="nav-link">Mes commentaires <i class="bi bi-star"></i></Link>
           </li>
         </ul>
       </div>
