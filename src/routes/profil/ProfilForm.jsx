@@ -6,6 +6,9 @@ const ProfilForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [profileImageUrl, setProfileImageUrl] = useState(profileImage);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
@@ -23,18 +26,20 @@ const ProfilForm = () => {
   const handleEditClick = () => {
     console.log("Username:", username);
     console.log("Password:", password);
+    console.log("First Name:", firstName);
+    console.log("Last Name:", lastName);
+    console.log("Phone Number:", phoneNumber);
   };
 
   return (
-    <div className="container bootstrap snippets bootdey">
-      <h1 className="text-primary">Mon profil</h1>
-      <hr />
+    <div className="container">
+      <h1 className="text-profil">Mon profil</h1>
       <div className="row">
         <div className="col-md-3">
           <div className="text-center">
             <img
               src={profileImageUrl}
-              className="avatar img-circle img-thumbnail"
+              className="avatar"
               alt="avatar"
             />
             <h6>Importer une image de profil</h6>
@@ -45,32 +50,62 @@ const ProfilForm = () => {
             />
           </div>
         </div>
-        <div className="col-md-9 personal-info">
-          <form className="form-horizontal">
+        <div className="col-md-9">
+          <form>
             <div className="form-group">
               <TextInput
-                label="Username"
+                label="Prénom"
+                type="text"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                className="form-control"
+              />
+            </div>
+            <div className="form-group">
+              <TextInput
+                label="Nom"
+                type="text"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                className="form-control"
+              />
+            </div>
+            <div className="form-group">
+              <TextInput
+                label="Adresse mail"
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="col-md-6" 
+                className="form-control"
               />
+            </div>
+            <div className="form-group">
               <TextInput
-                label="Password"
+                label="Mot de passe"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="col-md-6" 
+                className="form-control"
               />
             </div>
-
+            <div className="form-group">
+              <TextInput
+                label="Téléphone"
+                type="text"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                className="form-control"
+              />
+            </div>
+            <div className="text-right mt-2 col-2">
             <button
-              type="button"
-              className="edit-button"
-              onClick={handleEditClick}
+            type="button"
+            className="btn edit-button "
+            onClick={handleEditClick}
             >
-              Edit
+            Edit
             </button>
+            </div>
           </form>
         </div>
       </div>

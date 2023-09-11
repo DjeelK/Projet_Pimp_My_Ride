@@ -1,35 +1,28 @@
 /* Style pour le conteneur principal */
-.container-fluid-profil {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 0.7) 0%,
-    rgba(63, 109, 227, 0.7) 0%,
-    rgba(0, 212, 255, 0.7) 100%
-  );
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  padding: 20px;
   text-align: center;
-  position: relative;
-  color: white; /* Couleur du texte en blanc */
 }
 
 /* Style pour la photo de profil */
 .avatar {
-  width: 200px; /* Taille de la photo */
+  width: 200px;
   height: 200px;
-  border-radius: 50%; /* Forme circulaire */
-  cursor: pointer; /* Curseur pointer au survol */
-  margin-bottom: 20px; /* Espace sous la photo */
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 /* Style pour le formulaire de modification de profil */
+.personal-info {
+  text-align: left;
+  background: linear-gradient(180deg, #e6f7ff 0%, #007bff 100%); /* Dégradé bleu léger */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les champs d'entrée du formulaire */
 .form-group {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 15px;
 }
 
@@ -39,14 +32,12 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-/* Ajouter une classe pour ajuster la largeur du libellé */
+/* Style pour le libellé des champs */
 .form-label {
-  width: 40%; /* Ajuster la largeur du libellé pour correspondre aux champs */
-  float: left; /* Aligner les libellés à gauche */
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 /* Style pour le bouton "Edit" */
@@ -63,7 +54,69 @@
   background-color: #0056b3;
 }
 
-h6 {
-  margin-top: 12px;
-  font-size: 12px;
+/* Style pour le titre "Mon Profil" */
+.text-profil {
+  color: #333;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+/* Style pour le conteneur principal */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style pour la photo de profil */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Style pour le formulaire de modification de profil */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Style pour les champs d'entrée du formulaire */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style pour le libellé des champs */
+.form-label {
+  font-weight: bold;
+}
+
+
+/* Style pour le bouton "Edit" */
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style pour le titre "Mon Profil" */
+.text-profil {
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left : 300px;
+}
+
