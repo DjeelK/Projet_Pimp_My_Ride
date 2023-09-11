@@ -41,6 +41,12 @@ const NavigationBar = () => {
               <i className="bi bi-plus-circle bi-lg"></i> Publier un trajet
             </Link>
           </li>
+          <li className="nav-item">
+          <Link to="/mesTrajets" className="nav-link">Mes trajets</Link>
+          </li>
+          <li className="nav-item">
+          <Link to="/Profil" className="nav-link">Mon profil</Link>
+          </li>
         </ul>
       </div>
       <ul className="navbar-nav ml-auto">
