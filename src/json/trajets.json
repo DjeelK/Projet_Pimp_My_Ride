@@ -1,0 +1,22 @@
+{
+  "trajets": [
+    {
+      "id": 1,
+      "depart": "Ville A",
+      "arrivee": "Ville B",
+      "date": "2023-09-15"
+    },
+    {
+      "id": 2,
+      "depart": "Ville C",
+      "arrivee": "Ville D",
+      "date": "2023-09-20"
+    },
+    {
+      "id": 3,
+      "depart": "Ville E",
+      "arrivee": "Ville F",
+      "date": "2023-09-25"
+    }
+  ]
+}

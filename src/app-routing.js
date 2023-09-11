@@ -7,6 +7,7 @@ import SignUpPageRoute from "./routes/SignUpPageRoute";
 import CovoituragePageRoute from "./routes/CovoituragePageRoute";
 import ProfilPageRoute from "./routes/ProfilPageRoute";
 import TripPageRoute from "./routes/TripPageRoute";
+import MesTrajetsPageRoute from "./routes/MesTrajetsPageRoute";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/addTrajet',
         element: <TripPageRoute/>,
+      },
+      {
+        path: '/mesTrajets',
+        element: <MesTrajetsPageRoute/>,
       },
     ]
   }

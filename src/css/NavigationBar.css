@@ -52,3 +52,8 @@
 .nav-button:focus-visible {
   outline-offset: 1px;
 }
+
+.star-icon {
+  font-weight: bold; 
+  color: rgb(250, 204, 76); 
+}

@@ -1,4 +1,4 @@
-import TripPage from '../components/TrajetsPage';
+import TripPage from '../components/TripPage';
 import '../routes/trip/TripForm'
 
 const TripPageRoute = () => {
