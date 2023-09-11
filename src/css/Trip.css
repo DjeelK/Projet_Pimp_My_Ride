@@ -1,5 +1,6 @@
 .container-add-trajet {
   background: url('../assets/Bonhomme_trajet.png') no-repeat left top fixed; /* Déplacez l'image vers la gauche (left) */
+  background-color: rgb(173, 217, 243);
   background-size: contain;
   height: 100vh;
   display: flex;
@@ -45,7 +46,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #ff8800;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -53,6 +54,6 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #f1b787;
   }
   

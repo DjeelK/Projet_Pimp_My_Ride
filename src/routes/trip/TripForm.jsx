@@ -55,7 +55,7 @@ const TripForm = () => {
             required
           />
         </div>
-        <button type="submit">Créer</button>
+        <button type="submit">Publier</button>
       </form>
     </div>
   );
