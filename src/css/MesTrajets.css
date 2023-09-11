@@ -1,0 +1,44 @@
+/* Style pour la carte principale */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    padding: 10px; 
+    background-color: #c3d6f3; 
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Effet de zoom au survol de la carte */
+  }
+  
+  /* Style pour le titre de la carte */
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les informations du trajet */
+  .card-text {
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour les détails du trajet (départ, arrivée, date, etc.) */
+  .card-details {
+    padding: 10px;
+  }
+  
+  /* Style pour l'en-tête de la page */
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour le conteneur principal */
+  .container {
+    padding: 20px;
+  }
+  

@@ -29,7 +29,7 @@ const SearchBarForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(formData);
-    navigate('/coivoiturage', { state: formData });
+    navigate('/covoiturage', { state: formData });
   };
 
   return (

@@ -9,7 +9,7 @@ const CovoituragePage = () => {
       <NavigationBar />
       <div className="container-fluid-covoit">
         <div className="main-content-covoit">
-          <div className="overlay-rectangle d-flex align-items-start justify-content-center"> {/* Ajoutez ces classes pour aligner en haut */}
+          <div className="overlay-rectangle d-flex align-items-start justify-content-center">
             <SearchBarForm />
           </div>
         </div>
