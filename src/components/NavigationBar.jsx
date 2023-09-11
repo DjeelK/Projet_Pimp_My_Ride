@@ -37,7 +37,7 @@ const NavigationBar = () => {
       <div className="nav-separator">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/publier-trajet" className="nav-link publier-link">
+            <Link to="/addTrajet" className="nav-link publier-link">
               <i className="bi bi-plus-circle bi-lg"></i> Publier un trajet
             </Link>
           </li>

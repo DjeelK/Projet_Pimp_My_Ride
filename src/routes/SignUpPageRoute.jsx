@@ -12,12 +12,13 @@ const SignUpPageRoute = () => {
     phoneNumber: '',
   });
 
-  const handleSignUpClick = () => {
-    console.log('First Name:', formData.firstName);
-    console.log('Last Name:', formData.lastName);
-    console.log('Email:', formData.email);
-    console.log('Password:', formData.password);
-    console.log('Phone Number:', formData.phoneNumber);
+  const handleSignUpClick = (formData) => {
+    // console.log('First Name:', formData.firstName);
+    // console.log('Last Name:', formData.lastName);
+    // console.log('Email:', formData.email);
+    // console.log('Password:', formData.password);
+    // console.log('Phone Number:', formData.phoneNumber);
+    // console.log('Conducteur:', formData.isDriver);
   };
 
   const handleInputChange = (name, value) => {
