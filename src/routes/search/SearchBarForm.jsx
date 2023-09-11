@@ -1,50 +1,52 @@
-import React from 'react';
-import TextInput from '../../components/TextInput';
-import ButtonComponent from '../../components/ButtonComponent';
+import React, { useState } from 'react';
 
-const SearchBarForm = ({ formData, onInputChange, onSubmit }) => {
-  const { depart, arrivee, date } = formData;
+const SearchBarForm = ({ onSubmit }) => {
+  const [formData, setFormData] = useState({
+    depart: '',
+    arrivee: '',
+    date: '',
+  });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    onInputChange(name, value);
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit();
+    onSubmit(formData);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <TextInput
-        label="Lieu de départ"
+      <input
         type="text"
         name="depart"
-        value={depart}
+        value={formData.depart}
         onChange={handleInputChange}
         placeholder="Lieu de départ"
         required
       />
-      <TextInput
-        label="Lieu d'arrivée"
+      <input
         type="text"
         name="arrivee"
-        value={arrivee}
+        value={formData.arrivee}
         onChange={handleInputChange}
         placeholder="Lieu d'arrivée"
         required
       />
-      <TextInput
-        label="Date"
+      <input
         type="date"
         name="date"
-        value={date}
+        value={formData.date}
         onChange={handleInputChange}
         placeholder="Date"
         required
       />
-      <ButtonComponent type="submit">Rechercher</ButtonComponent>
+      <button type="submit">Rechercher</button>
     </form>
   );
 };

@@ -1,15 +1,34 @@
-import React from "react";
-import "../css/SearchBar.css";
-import IconeLocalisation from "./IconeLocalisation";
-import LocalisationIcon from "../assets/location-2955.png";
-import CalendrierIcon from "../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png";
-import ButtonTool from "./ButtonTool";
+
+import React, { useState } from 'react';
+import '../css/SearchBar.css';
+import IconeLocalisation from './IconeLocalisation';
+import LocalisationIcon from '../assets/location-2955.png';
+import CalendrierIcon from '../assets/vecteezy_calendar-icon-sign-symbol-design_10160301_960.png';
+import ButtonTool from './ButtonTool';
 
 const SearchBar = () => {
-  
+  const [formData, setFormData] = useState({
+    depart: '',
+    arrivee: '',
+    date: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
     <div className="search-bar" id="bar_search_icone">
-      <form className="row d-flex justify-content-between px-3">
+      <form className="row d-flex justify-content-between px-3" onSubmit={handleSubmit}>
         <div className="col-3 d-flex flex-column align-items-center">
           <IconeLocalisation
             iconeLocalisation={LocalisationIcon}
@@ -17,10 +36,16 @@ const SearchBar = () => {
           />
           <div className="col-auto title-container">
             <div className="title-icon">Départ</div>
-            <input type="text" />
+            <input
+              type="text"
+              name="depart"
+              value={formData.depart}
+              onChange={handleInputChange}
+              placeholder="Lieu de départ"
+              required
+            />
           </div>
         </div>
-
         <div className="col-3 d-flex flex-column align-items-center">
           <IconeLocalisation
             iconeLocalisation={LocalisationIcon}
@@ -28,7 +53,14 @@ const SearchBar = () => {
           />
           <div className="col-auto title-container">
             <div className="title-icon">Arrivée</div>
-            <input type="text" />
+            <input
+              type="text"
+              name="arrivee"
+              value={formData.arrivee}
+              onChange={handleInputChange}
+              placeholder="Lieu d'arrivée"
+              required
+            />
           </div>
         </div>
 
@@ -38,13 +70,20 @@ const SearchBar = () => {
             className="align-self-center"
           />
           <div className="col-auto title-container">
-        <div className="title-icon-date">Date</div>
-          <input type="date" className="date-input" />
+            <div className="title-icon-date">Date</div>
+            <input
+              type="date"
+              className="date-input"
+              name="date"
+              value={formData.date}
+              onChange={handleInputChange}
+              placeholder="Date"
+              required
+            />
+          </div>
         </div>
-        </div>
-
         <div className="col-3 d-flex align-items-center justify-content-end">
-          <ButtonTool />
+          <ButtonTool onClick={onsubmit}/>
         </div>
       </form>
     </div>
@@ -52,3 +91,4 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
+
