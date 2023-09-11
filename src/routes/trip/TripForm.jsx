@@ -23,7 +23,7 @@ const TripForm = () => {
 
   return (
     <div className="create-trip-form">
-      <h2>Créer un nouveau trajet</h2>
+      <h2>Publier un nouveau trajet 🚘 </h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="depart">Départ :</label>
