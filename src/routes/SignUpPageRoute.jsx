@@ -2,23 +2,36 @@ import React, { useState } from 'react';
 import SignUpForm from './auth/SignUpForm'; // Importez le composant SignUpForm
 import '../css/SignUpPage.css';
 import { Link } from 'react-router-dom';
+import { registerAPICall } from '../services/AuthService';
 
 const SignUpPageRoute = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+    // name: '',
+    username: '',
+    // email: '',
     password: '',
-    phoneNumber: '',
+    driver:''
+    // phoneNumber: '',
   });
 
-  const handleSignUpClick = (formData) => {
+  const handleSignUpClick = (e) => {
     // console.log('First Name:', formData.firstName);
     // console.log('Last Name:', formData.lastName);
     // console.log('Email:', formData.email);
     // console.log('Password:', formData.password);
     // console.log('Phone Number:', formData.phoneNumber);
     // console.log('Conducteur:', formData.isDriver);
+    // e.preventDefault();
+
+    // const register = {formData}
+    //
+    // console.log(register);
+    //
+    // registerAPICall(formData).then((response) => {
+    //   console.log(response.data);
+    // }).catch(error => {
+    //   console.error(error);
+    // })
   };
 
   const handleInputChange = (name, value) => {

@@ -34,7 +34,7 @@ const SignInPageRoute = () => {
             onSignInClick={handleSignInClick}
           />
           <div className="no-account">
-          No Account? <Link to="/signup" className="sign-up-link">Sign up</Link>
+          No Account? <Link to="/register" className="sign-up-link">Sign up</Link>
           </div>
         </div>
       </div>

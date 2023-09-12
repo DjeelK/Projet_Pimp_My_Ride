@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import TextInput from '../../components/TextInput';
 import ButtonComponent from '../../components/ButtonComponent';
+import {loginAPICall, registerAPICall, saveLoggedInUser, storeToken} from '../../services/AuthService';
+
 
 const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
-  const { firstName, lastName, email, password, phoneNumber } = formData;
+  const { username, password ,driver} = formData;
 
-  const [isDriver, setIsDriver] = useState(false);
+
+
+  // const [isDriver, setIsDriver] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -13,18 +17,40 @@ const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
   };
 
   // Fonction pour gérer le changement de la checkbox "Conducteur"
-  const handleCheckboxChange = (e) => {
-    setIsDriver(e.target.checked);
+  const handleCheckboxChange = () => {
+    // setIsDriver(e.target.checked);
+      onInputChange('driver', !driver);
+      console.log(driver)
+
   };
+
+    const updatedFormData = {
+        ...formData,
+        driver: driver,
+    };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Ajoutez isDriver aux données du formulaire
-    const updatedFormData = {
-      ...formData,
-      isDriver: isDriver,
-    };
+      e.preventDefault();
+        console.log(formData);
+      registerAPICall(formData).then((response) => {
+         console.log(response.data);
+
+          const token = 'Bearer ' + response.data.accessToken;
+          storeToken(token);
+
+          saveLoggedInUser(username);
+          navigator("/")
+
+          window.location.reload(false);
+      }).catch(error => {
+          console.error(error);
+      })
+
+
+      // Ajoutez isDriver aux données du formulaire
+
 
     onSignUpClick(updatedFormData);
   };
@@ -34,30 +60,29 @@ const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
       <TextInput
         label="Nom"
         type="text"
-        name="firstName"
-        value={firstName}
+        name="username"
+        value={username}
         onChange={handleInputChange}
         placeholder="Votre nom"
         required
       />
-      <TextInput
-        label="Prénom"
-        type="text"
-        name="lastName"
-        value={lastName}
-        onChange={handleInputChange}
-        placeholder="Votre prénom"
-        required
-      />
-      <TextInput
-        label="Adresse email"
-        type="email"
-        name="email"
-        value={email}
-        onChange={handleInputChange}
-        placeholder="Adresse email"
-        required
-      />
+      {/*<TextInput*/}
+      {/*  label="Prénom"*/}
+      {/*  type="text"*/}
+      {/*  name="lastName"*/}
+      {/*  value={lastName}*/}
+      {/*  onChange={handleInputChange}*/}
+      {/*  placeholder="Votre prénom"*/}
+      {/*  // required*/}
+      {/*/>*/}
+      {/*<TextInput*/}
+      {/*  label="Adresse email"*/}
+      {/*  type="email"*/}
+      {/*  name="email"*/}
+      {/*  value={email}*/}
+      {/*  onChange={handleInputChange}*/}
+      {/*  placeholder="Adresse email"*/}
+      {/*/>*/}
       <TextInput
         label="Mot de passe"
         type="password"
@@ -67,21 +92,21 @@ const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
         placeholder="Mot de passe"
         required
       />
-      <TextInput
-        label="Numéro de téléphone"
-        type="tel"
-        name="phoneNumber"
-        value={phoneNumber}
-        onChange={handleInputChange}
-        placeholder="Numéro de téléphone"
-      />
+      {/*<TextInput*/}
+      {/*  label="Numéro de téléphone"*/}
+      {/*  type="tel"*/}
+      {/*  name="phoneNumber"*/}
+      {/*  value={phoneNumber}*/}
+      {/*  onChange={handleInputChange}*/}
+      {/*  placeholder="Numéro de téléphone"*/}
+      {/*/>*/}
       <div className="form-group">
       <label >
           Conducteur:
           <input
             type="checkbox"
             name="isDriver"
-            checked={isDriver}
+            checked={driver}
             onChange={handleCheckboxChange}
             style={{ marginLeft: '10px' }}
           />

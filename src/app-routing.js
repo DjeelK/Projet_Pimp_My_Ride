@@ -11,6 +11,7 @@ import MesTrajetsPageRoute from "./routes/MesTrajetsPageRoute";
 import { isUserLoggedIn } from './services/AuthService'
 import {Navigate} from 'react-router-dom'
 
+
 const { createBrowserRouter } = require("react-router-dom");
 
 function AuthenticatedRoute({children}){
