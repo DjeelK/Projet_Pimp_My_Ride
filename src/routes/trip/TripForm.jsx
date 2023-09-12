@@ -18,7 +18,29 @@ const TripForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    const nouveauTrajet = {
+      id: Date.now(), // valeur unique pour l'ID (= date actuelle)
+      depart: formData.depart,
+      arrivee: formData.arrivee,
+      date: formData.date,
+    };
+
+    // Récupérer la liste actuelle des trajets depuis localStorage
+    const trajets = JSON.parse(localStorage.getItem('trajets')) || [];
+
+      // Ajouter le nouveau trajet à la liste
+    trajets.push(nouveauTrajet);
+
+    // Enregistrer la liste mise à jour dans localStorage
+    localStorage.setItem('trajets', JSON.stringify(trajets));
+
+     // Réinitialiser le formulaire
+    setFormData({
+    depart: '',
+    arrivee: '',
+    date: '',
+  });
+
   };
 
   return (

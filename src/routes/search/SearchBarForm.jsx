@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import '../../css/SearchBar.css';
 import IconeLocalisation from '../../components/IconeLocalisation';
@@ -18,8 +17,6 @@ const SearchBarForm = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    // console.log('Name:', name);
-    // console.log('Value:', value);
     setFormData({
       ...formData,
       [name]: value,
@@ -28,7 +25,6 @@ const SearchBarForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
     navigate('/covoiturage', { state: formData });
   };
 
@@ -89,7 +85,7 @@ const SearchBarForm = () => {
           </div>
         </div>
         <div className="col-3 d-flex align-items-center justify-content-end">
-          <ButtonTool onClick={onsubmit}/>
+          <ButtonTool type="submit">Rechercher</ButtonTool>
         </div>
       </form>
     </div>
@@ -97,4 +93,3 @@ const SearchBarForm = () => {
 };
 
 export default SearchBarForm;
-
