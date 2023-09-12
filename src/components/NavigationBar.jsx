@@ -58,12 +58,12 @@ const NavigationBar = () => {
       </div>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link to="/signin" className="nav-link nav-button btn">
+          <Link to="/login" className="nav-link nav-button btn">
             Sign In
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/signUp" className="nav-link nav-button btn">
+          <Link to="/register" className="nav-link nav-button btn">
             Sign Up
           </Link>
         </li>
