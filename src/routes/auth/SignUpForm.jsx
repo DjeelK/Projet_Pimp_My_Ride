@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import TextInput from '../../components/TextInput';
 import ButtonComponent from '../../components/ButtonComponent';
 import {loginAPICall, registerAPICall, saveLoggedInUser, storeToken} from '../../services/AuthService';
+import { useNavigate } from 'react-router-dom';
 
 
 const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
   const { username, password ,driver} = formData;
-
+const navigate = useNavigate();
 
 
   // const [isDriver, setIsDriver] = useState(false);
@@ -32,6 +33,8 @@ const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+      navigate('/', { state: formData });
+
       e.preventDefault();
         console.log(formData);
       registerAPICall(formData).then((response) => {
@@ -53,6 +56,7 @@ const SignUpForm = ({ formData, onInputChange, onSignUpClick }) => {
 
 
     onSignUpClick(updatedFormData);
+
   };
 
   return (

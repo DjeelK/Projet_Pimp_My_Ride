@@ -4,7 +4,6 @@ import HomePageRoute from './routes/HomePageRoute';
 import ApplicationPageRoute from './routes/ApplicationPageRoute';
 import SignInPageRoute from './routes/SignInPageRoute';
 import SignUpPageRoute from "./routes/SignUpPageRoute";
-import CovoituragePageRoute from "./routes/CovoituragePageRoute";
 import ProfilPageRoute from "./routes/ProfilPageRoute";
 import TripPageRoute from "./routes/TripPageRoute";
 import MesTrajetsPageRoute from "./routes/MesTrajetsPageRoute";
@@ -18,6 +17,7 @@ function AuthenticatedRoute({children}){
 
   const isAuth = isUserLoggedIn();
 
+  console.log(isAuth)
   if(isAuth) {
     return children;
   }

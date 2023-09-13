@@ -54,7 +54,7 @@ const SignUpPageRoute = () => {
             onSignUpClick={handleSignUpClick}
           />
           <div className="no-account">
-          Already have an account? <Link to="/signin" className="sign-in-link">Sign in</Link>
+          Already have an account? <Link to="/login" className="sign-in-link">Sign in</Link>
           </div>
         </div>
       </div>

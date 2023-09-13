@@ -1,10 +1,12 @@
 import React from 'react';
 import TextInput from '../../components/TextInput';
 import ButtonComponent from '../../components/ButtonComponent';
+import { loginAPICall, saveLoggedInUser, storeToken } from '../../services/AuthService';
+import {useNavigate} from "react-router-dom";
 
 const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
-  const { email, password } = formData;
-
+  const { username, password } = formData;
+    const navigate = useNavigate();
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     onInputChange(name, value);
@@ -12,6 +14,22 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+      navigate('/', { state: formData });
+    loginAPICall(username, password).then((response) => {
+          console.log(response.data);
+
+          const token = 'Bearer ' + response.data.accessToken;
+          storeToken(token);
+
+          saveLoggedInUser(username);
+          navigator("/todos")
+
+          window.location.reload(false);
+      }).catch(error => {
+          console.error(error);
+      })
+
+
     onSignInClick();
   };
 
@@ -19,9 +37,9 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
     <form onSubmit={handleSubmit}>
       <TextInput
         label="Entrez votre adresse mail"
-        type="email"
-        name="email"
-        value={email}
+        type="text"
+        name="username"
+        value={username}
         onChange={handleInputChange}
         placeholder="Adresse email"
         required

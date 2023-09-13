@@ -5,7 +5,7 @@ import '../css/SignInPage.css';
 
 const SignInPageRoute = () => {
   const [formData, setFormData] = useState({
-    email: '',
+    username: '',
     password: '',
   });
 
