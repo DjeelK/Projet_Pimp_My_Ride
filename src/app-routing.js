@@ -9,6 +9,7 @@ import TripPageRoute from "./routes/TripPageRoute";
 import MesTrajetsPageRoute from "./routes/MesTrajetsPageRoute";
 import { isUserLoggedIn } from './services/AuthService'
 import {Navigate} from 'react-router-dom'
+import CovoituragePageRoute from "./routes/CovoituragePageRoute";
 
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/covoiturage',
-        element: <AuthenticatedRoute CovoituragePageRoute>
+        element: <AuthenticatedRoute> <CovoituragePageRoute/>
           </AuthenticatedRoute>,
       },
       {

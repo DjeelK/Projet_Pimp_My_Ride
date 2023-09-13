@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import '../../css/Trip.css'; 
+import '../../css/Trip.css';
+import {postRide} from "../../services/RideService";
+import {useNavigate} from "react-router-dom";
 
 const TripForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     depart: '',
-    arrivee: '',
+    arrival: '',
     date: '',
   });
 
@@ -19,25 +22,34 @@ const TripForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const nouveauTrajet = {
-      id: Date.now(), // valeur unique pour l'ID (= date actuelle)
       depart: formData.depart,
-      arrivee: formData.arrivee,
+      arrival: formData.arrival,
       date: formData.date,
     };
 
-    // Récupérer la liste actuelle des trajets depuis localStorage
-    const trajets = JSON.parse(localStorage.getItem('trajets')) || [];
 
-      // Ajouter le nouveau trajet à la liste
-    trajets.push(nouveauTrajet);
+    postRide(nouveauTrajet.date,nouveauTrajet.depart,nouveauTrajet.arrival).then((response) => {
+      console.log(response.data)
+      navigate('/mesTrajets')
+    }).catch(error => {
+      console.error(error);
+    })
 
-    // Enregistrer la liste mise à jour dans localStorage
-    localStorage.setItem('trajets', JSON.stringify(trajets));
+
+
+    // // Récupérer la liste actuelle des trajets depuis localStorage
+    // const trajets = JSON.parse(localStorage.getItem('trajets')) || [];
+    //
+    //   // Ajouter le nouveau trajet à la liste
+    // trajets.push(nouveauTrajet);
+    //
+    // // Enregistrer la liste mise à jour dans localStorage
+    // localStorage.setItem('trajets', JSON.stringify(trajets));
 
      // Réinitialiser le formulaire
     setFormData({
     depart: '',
-    arrivee: '',
+      arrival: '',
     date: '',
   });
 
@@ -61,8 +73,8 @@ const TripForm = () => {
           <label htmlFor="arrivee">Arrivée :</label>
           <input
             type="text"
-            name="arrivee"
-            value={formData.arrivee}
+            name="arrival"
+            value={formData.arrival}
             onChange={handleInputChange}
             required
           />

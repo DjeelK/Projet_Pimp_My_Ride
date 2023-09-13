@@ -22,7 +22,7 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
           storeToken(token);
 
           saveLoggedInUser(username);
-          navigator("/todos")
+          navigator("/mesTrajets")
 
           window.location.reload(false);
       }).catch(error => {

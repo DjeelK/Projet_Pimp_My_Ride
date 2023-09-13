@@ -40,11 +40,12 @@ const navigate = useNavigate();
       registerAPICall(formData).then((response) => {
          console.log(response.data);
 
+
           const token = 'Bearer ' + response.data.accessToken;
           storeToken(token);
-
+          console.log('Bearer ' + response.data.accessToken)
           saveLoggedInUser(username);
-          navigator("/")
+          navigate("/")
 
           window.location.reload(false);
       }).catch(error => {
