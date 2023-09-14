@@ -16,11 +16,11 @@ axios.interceptors.request.use(function (config) {
 
 export const getAllRide = () => axios.get(BASE_REST_API_URL)
 
-export const postRide = (date,depart,arrival) => axios.post(BASE_REST_API_URL, { date, depart,arrival})
+export const postRide = (date,depart,arrival,userId) => axios.post(BASE_REST_API_URL, { date,depart,arrival,userId})
 
-// export const getTodo = (id) => axios.get(BASE_REST_API_URL + '/' + id)
-//
-// export const updateTodo = (id, todo) => axios.put(BASE_REST_API_URL + '/' + id, todo)
+ export const getRide = (id) => axios.get(BASE_REST_API_URL + '/' + id)
+
+ export const updateUserRide = (id, ride) => axios.put(BASE_REST_API_URL + '/' + id, ride)
 //
 // export const deleteTodo = (id) => axios.delete(BASE_REST_API_URL + '/' + id)
 //

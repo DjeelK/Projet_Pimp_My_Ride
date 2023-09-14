@@ -12,17 +12,17 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
     onInputChange(name, value);
   };
 
-  const handleSubmit = (e) => {
+    async function handleSubmit(e) {
     e.preventDefault();
       navigate('/', { state: formData });
     loginAPICall(username, password).then((response) => {
           console.log(response.data);
 
-          const token = 'Bearer ' + response.data.accessToken;
+          const token = 'Bearer ' + response.data.token;
           storeToken(token);
 
           saveLoggedInUser(username);
-          navigator("/mesTrajets")
+          navigate("/mesTrajets")
 
           window.location.reload(false);
       }).catch(error => {
@@ -34,7 +34,7 @@ const SignInForm = ({ formData, onInputChange, onSignInClick }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={(e) => handleSubmit(e)}>
       <TextInput
         label="Entrez votre adresse mail"
         type="text"

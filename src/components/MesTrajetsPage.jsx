@@ -13,14 +13,15 @@ const MesTrajetsPage = () => {
     // const trajetsStorage = JSON.parse(localStorage.getItem('trajets')) || [];
     // setTrajets(trajetsStorage);
       listRides();
-      console.log("test")
+
   }, []);
 
     function listRides(){
         getAllRide().then((response) => {
+            console.log("test")
             setRides(response.data);
         }).catch(error => {
-            console.error(error);
+            console.error(error.response.data);
         })
     }
 
